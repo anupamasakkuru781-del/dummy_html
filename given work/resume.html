@@ -1,0 +1,261 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">[]
+    <title>Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;     #text style
+            /* margin: 20px;             # space outside page */
+            padding: 0;               # no inner space 
+            background-color: #f4f4f4;     # for the background colour
+        }
+        .container {       # main resume box
+            max-width: 800px;        limit width;
+            margin: auto;        
+            background: white;      # page background-color;
+            padding: 20px;          # inside space
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);        shadow effect
+        }
+        h1, h2 {
+            color: #333;         heading colour
+        }
+        .section {      # spacing
+            margin-bottom: 20px;      # add space between sections
+        }
+        .section-title {
+            border-bottom: 2px solid #333;    adds line under headings
+            padding-bottom: 5px;   # to look professional
+            margin-bottom: 10px;
+        }
+        .job-title {
+            font-weight: bold;      # title bold
+        }
+        .company {
+            font-style: italic;   fount text 
+        }
+        .date {
+            color: #777;  colour of date 
+        }
+</style>
+</head>
+<body>
+    <div class="container">    # resume content inside this 
+        <h1>your name</h1>   # main heading 
+        <p>Email: your@email.com | Phone: 1234567890 | LinkedIn: linkedin.com/in/yourprofile</p>    # paragraph with details 
+        <div class="section">   # new section 
+            <h2 class="section-title">Professional Summary</h2>   # heading for new section 
+            <p>Experienced software developer with a strong background in web development.</p>  introduction in short 
+        </div>   # division used to group content together 
+        <div class="section">
+            <h2 class="section-title">Work Experience</h2>
+            <div>
+                <p class="job-title">Software Developer</p>
+                <p class="company">Tech Company</p>
+                <p class="date">Jan 2020 - Present</p>     # time period 
+                <ul>    # unordered list 
+                    <li>Developed and maintained web applications using JavaScript, HTML, and CSS.</li>   # each bullet points 
+                    <li>Collaborated with cross-functional teams to define and implement new features.</li>
+                    <li>Optimized application performance, resulting in a 20% increase in speed.</li>     # list item 
+                </ul>
+            </div>
+            <div>
+                <p class="job-title">Junior Developer</p>
+                <p class="company">Another Tech Company</p>
+                <p class="date">Jun 2018 - Dec 2019</p>
+                <ul>
+                    <li>Assisted in the development of internal tools using Python and Django.</li>
+                    <li>Participated in code reviews and contributed to improving code quality.</li>
+                    <li>Maintained documentation for software projects.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+            <h2 class="section-title">Education</h2>
+            <p class="job-title">Bachelor of Science in Computer Science</p>
+            <p class="company">University Name</p>
+            <p class="date">2014 - 2018</p>
+        </div>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            width: 900px;
+            margin: auto;
+            background: white;
+            display: flex;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .left {
+            width: 30%;
+            background: #e9edf2;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .left img {
+            width: 120px;
+            border-radius: 50%;
+        }
+
+        .section {
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .section h3 {
+            border-bottom: 2px solid gray;
+            padding-bottom: 5px;
+        }
+
+        .right {
+            width: 70%;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 5px;
+        }
+
+        .title {
+            color: gray;
+            margin-bottom: 20px;
+        }
+
+        .box {
+            background: #f0f2f5;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- LEFT SIDE -->
+    <div class="left">
+        <img src="https://via.placeholder.com/120" alt="profile">
+
+        <div class="section">
+            <h3>CONTACT</h3>
+            <p>📧 john.doe@student.com</p>
+            <p>📞 +123 456 7890</p>
+            <p>📍 New York, USA</p>
+            <p>🌐 www.johndoe.com</p>
+        </div>
+
+        <div class="section">
+            <h3>EDUCATION</h3>
+            <p><b>Bachelor of Computer Science</b><br>
+            XYZ University<br>
+            2022 – 2026</p>
+        </div>
+
+        <div class="section">
+            <h3>SKILLS</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>PROJECTS</h3>
+            <p><b>Portfolio Website</b><br>
+            A personal portfolio built with HTML.</p>
+
+            <p><b>Student Registration Form</b><br>
+            A simple form using HTML elements.</p>
+
+            <p><b>Simple Calculator</b><br>
+            A basic calculator using JavaScript.</p>
+        </div>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="right">
+        <h1>John Doe</h1>
+        <div class="title">Web Developer | Student</div>
+
+        <div class="section">
+            <h3>ABOUT ME</h3>
+            <p>
+                Hello! I am <b>John Doe</b>, a passionate web development student.
+                I love building simple and clean websites. I enjoy turning ideas
+                into real, working web pages.
+            </p>
+        </div>
+
+        <div class="section">
+            <h3>EDUCATION</h3>
+            <p><b>Bachelor of Computer Science</b><br>
+            XYZ University, 2022 – 2026<br>
+            New York, USA</p>
+        </div>
+
+        <div class="section">
+            <h3>SKILLS</h3>
+            <p>HTML<br>CSS<br>JavaScript</p>
+        </div>
+
+        <div class="section">
+            <h3>PROJECTS</h3>
+            <div class="box">
+                <ol>
+                    <li><b>Portfolio Website</b><br>
+                        A personal portfolio built with HTML.</li><br>
+
+                    <li><b>Student Registration Form</b><br>
+                        A simple form using HTML elements.</li><br>
+
+                    <li><b>Simple Calculator</b><br>
+                        A basic calculator using JavaScript.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>CONTACT</h3>
+            <p>Email: john.doe@student.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Location: New York, USA</p>
+        </div>
+
+        <div class="footer">
+            © 2026 John Doe. All Rights Reserved.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

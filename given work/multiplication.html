@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Multiplication Chart</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f4f4f4;
+  }
+
+  h1 {
+    letter-spacing: 5px;
+  }
+
+  table {
+    margin: 20px auto;
+    border-collapse: collapse;
+  }
+
+  td, th {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid #444;
+    color: white;
+  }
+
+  /* Header */
+  th {
+    background: black;
+  }
+
+  /* Column colors */
+  .c1 { background:#ff69b4; }
+  .c2 { background:#ff0000; }
+  .c3 { background:#f4a460; }
+  .c4 { background:#ff8c00; }
+  .c5 { background:#ffd700; color:black; }
+  .c6 { background:#f1c40f; color:black; }
+  .c7 { background:#c5e1a5; color:black; }
+  .c8 { background:#228b22; }
+  .c9 { background:#87ceeb; color:black; }
+  .c10 { background:#0b3c5d; }
+  .c11 { background:#b0a4e3; color:black; }
+  .c12 { background:#800080; }
+
+  /* Diagonal highlight */
+  .diag {
+    background: white !important;
+    color: black !important;
+  }
+
+</style>
+</head>
+<body>
+
+<h1>MULTIPLICATION CHART</h1>
+
+<table id="chart"></table>
+
+<script>
+let table = document.getElementById("chart");
+
+// Create table
+for (let i = 0; i <= 12; i++) {
+  let row = document.createElement("tr");
+
+  for (let j = 0; j <= 12; j++) {
+    let cell = document.createElement(i === 0 || j === 0 ? "th" : "td");
+
+    if (i === 0 && j === 0) {
+      cell.innerHTML = "X";
+    } 
+    else if (i === 0) {
+      cell.innerHTML = j;
+      cell.classList.add("c" + j);
+    } 
+    else if (j === 0) {
+      cell.innerHTML = i;
+      cell.classList.add("c" + i);
+    } 
+    else {
+      let val = i * j;
+      cell.innerHTML = val;
+
+      // Apply column color
+      cell.classList.add("c" + j);
+
+      // Diagonal highlight
+      if (i === j) {
+        cell.classList.add("diag");
+      }
+    }
+
+    row.appendChild(cell);
+  }
+
+  table.appendChild(row);
+}
+</script>
+
+</body>
+</html>

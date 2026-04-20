@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Odd Number Pattern & Diagonal Symmetry</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f5f5f5;
+  }
+
+  h2 {
+    margin-top: 20px;
+  }
+
+  table {
+    margin: 20px auto;
+    border-collapse: collapse;
+  }
+
+  td, th {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid #333;
+    font-weight: bold;
+  }
+
+  /* Header row/column */
+  th {
+    background: #ddd;
+  }
+
+  /* Diagonal highlight */
+  .diag {
+    background-color: red;
+    color: white;
+  }
+
+  /* Odd numbers (circle effect) */
+  .odd {
+    position: relative;
+    background-color: #fff;
+  }
+
+  .odd span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    border: 2px solid green;
+  }
+
+  /* Even cells color */
+  .even {
+    background-color: #ffeb3b;
+  }
+</style>
+</head>
+<body>
+
+<h2>Odd Number Pattern and Diagonal Symmetry</h2>
+
+<table id="table"></table>
+
+<script>
+  let table = document.getElementById("table");
+
+  for (let i = 0; i <= 10; i++) {
+    let row = document.createElement("tr");
+
+    for (let j = 0; j <= 10; j++) {
+      let cell = document.createElement(i === 0 || j === 0 ? "th" : "td");
+
+      if (i === 0 && j === 0) {
+        cell.innerHTML = "";
+      } else if (i === 0) {
+        cell.innerHTML = j;
+      } else if (j === 0) {
+        cell.innerHTML = i;
+      } else {
+        let val = i * j;
+
+        if (i === j) {
+          cell.classList.add("diag");
+          cell.innerHTML = val;
+        } 
+        else if (val % 2 !== 0) {
+          cell.classList.add("odd");
+          cell.innerHTML = "<span>" + val + "</span>";
+        } 
+        else {
+          cell.classList.add("even");
+          cell.innerHTML = val;
+        }
+      }
+
+      row.appendChild(cell);
+    }
+
+    table.appendChild(row);
+  }
+</script>
+
+</body>
+</html>

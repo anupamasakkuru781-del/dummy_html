@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiplication Table with Diagonal</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+        }
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #999;
+            width: 50px;
+            height: 40px;
+            text-align: center;
+            font-size: 16px;
+        }
+        th {
+            background-color: #dfeadf;
+        }
+        .row-head {
+            background-color: #f3e7c3;
+        }
+        .diagonal {
+            border: 3px solid black;
+            font-weight: bold;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Multiplication Table (Diagonal Pattern)</h2>
+
+<table>
+    <script>
+        let size = 13;
+
+        // Top header row
+        document.write("<tr><th></th>");
+        for (let i = 1; i <= size; i++) {
+            document.write("<th>" + i + "</th>");
+        }
+        document.write("</tr>");
+
+        // Table rows
+        for (let i = 1; i <= size; i++) {
+            document.write("<tr>");
+            document.write("<th class='row-head'>" + i + "</th>");
+
+            for (let j = 1; j <= size; j++) {
+                let value = i * j;
+
+                if (i === j) {
+                    document.write("<td class='diagonal'>" + value + "</td>");
+                } else {
+                    document.write("<td>" + value + "</td>");
+                }
+            }
+
+            document.write("</tr>");
+        }
+    </script>
+</table>
+
+</body>
+</html>

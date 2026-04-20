@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>10x10 Color Pattern Table</title>
+
+<style>
+body{
+    text-align:center;
+    font-family:Arial;
+    background:#eee;
+}
+
+h1{
+    margin:20px;
+}
+
+table{
+    border-collapse:collapse;
+    margin:auto;
+}
+
+td{
+    width:70px;
+    height:70px;
+    border:2px solid black;
+}
+
+/* 1. Red White Checker */
+.checker{
+    background:
+    linear-gradient(45deg, red 25%, transparent 25%),
+    linear-gradient(-45deg, red 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, red 75%),
+    linear-gradient(-45deg, transparent 75%, red 75%);
+    background-size:40px 40px;
+    background-color:white;
+}
+
+/* 2. Blue Yellow Diagonal */
+.diagonal{
+    background: repeating-linear-gradient(
+        135deg,
+        #1f77b4 0px,
+        #1f77b4 30px,
+        #ffd60a 30px,
+        #ffd60a 60px
+    );
+}
+
+/* 3. Green pattern */
+.green{
+    background: repeating-linear-gradient(
+        135deg,
+        #2d6a4f,
+        #2d6a4f 25px,
+        #52b788 25px,
+        #52b788 50px
+    );
+}
+
+/* 4. Pink zigzag illusion */
+.pink{
+    background: repeating-linear-gradient(
+        45deg,
+        #ffafcc,
+        #ffafcc 20px,
+        #c9184a 20px,
+        #c9184a 40px
+    );
+}
+
+/* 5. Orange Yellow blocks */
+.orange-yellow{
+    background:
+    linear-gradient(90deg, orange 50%, gold 50%);
+}
+
+/* 6. Triangle pattern */
+.triangle{
+    background: linear-gradient(
+        135deg,
+        orange 50%,
+        skyblue 50%
+    );
+}
+
+/* 7. Diamond pattern */
+.diamond{
+    background:
+    linear-gradient(45deg, #c1121f 25%, transparent 25%),
+    linear-gradient(-45deg, #c1121f 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #c1121f 75%),
+    linear-gradient(-45deg, transparent 75%, #c1121f 75%);
+    background-size:40px 40px;
+    background-color:#fdf0d5;
+}
+
+/* 8. Blue grid */
+.bluegrid{
+    background:
+    repeating-linear-gradient(
+        0deg,
+        #90e0ef,
+        #90e0ef 20px,
+        #0077b6 20px,
+        #0077b6 40px
+    );
+}
+
+/* 9. Cream stripes */
+.cream{
+    background: repeating-linear-gradient(
+        0deg,
+        #fefae0,
+        #fefae0 20px,
+        #e85d04 20px,
+        #e85d04 40px
+    );
+}
+
+/* 10. Black Yellow checker */
+.black-yellow{
+    background:
+    linear-gradient(45deg, #000 25%, transparent 25%),
+    linear-gradient(-45deg, #000 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #000 75%),
+    linear-gradient(-45deg, transparent 75%, #000 75%);
+    background-size:40px 40px;
+    background-color:gold;
+}
+
+/* 11. Solid black */
+.black{
+    background:#222;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>10x10 Color Pattern Table</h1>
+
+<table>
+
+<!-- Row 1 -->
+<tr>
+<td class="checker"></td>
+<td class="checker"></td>
+<td class="checker"></td>
+<td class="checker"></td>
+<td class="checker"></td>
+<td class="diagonal"></td>
+<td class="diagonal"></td>
+<td class="diagonal"></td>
+<td class="diagonal"></td>
+<td class="diagonal"></td>
+</tr>
+
+<!-- Row 2 -->
+<tr>
+<td class="checker"></td>
+<td class="checker"></td>
+<td class="checker"></td>
+<td class="checker"></td>
+<td class="checker"></td>
+<td class="diagonal"></td>
+<td class="diagonal"></td>
+<td class="diagonal"></td>
+<td class="diagonal"></td>
+<td class="diagonal"></td>
+</tr>
+
+<!-- Row 3 -->
+<tr>
+<td class="green"></td>
+<td class="green"></td>
+<td class="green"></td>
+<td class="green"></td>
+<td class="green"></td>
+<td class="green"></td>
+<td class="green"></td>
+<td class="green"></td>
+<td class="green"></td>
+<td class="green"></td>
+</tr>
+
+<!-- Row 4 -->
+<tr>
+<td class="pink"></td>
+<td class="pink"></td>
+<td class="pink"></td>
+<td class="pink"></td>
+<td class="pink"></td>
+<td class="pink"></td>
+<td class="pink"></td>
+<td class="pink"></td>
+<td class="pink"></td>
+<td class="pink"></td>
+</tr>
+
+<!-- Row 5 -->
+<tr>
+<td class="orange-yellow"></td>
+<td class="orange-yellow"></td>
+<td class="orange-yellow"></td>
+<td class="orange-yellow"></td>
+<td class="orange-yellow"></td>
+<td class="triangle"></td>
+<td class="triangle"></td>
+<td class="triangle"></td>
+<td class="triangle"></td>
+<td class="triangle"></td>
+</tr>
+
+<!-- Row 6 -->
+<tr>
+<td class="diamond"></td>
+<td class="diamond"></td>
+<td class="diamond"></td>
+<td class="diamond"></td>
+<td class="diamond"></td>
+<td class="bluegrid"></td>
+<td class="bluegrid"></td>
+<td class="bluegrid"></td>
+<td class="bluegrid"></td>
+<td class="bluegrid"></td>
+</tr>
+
+<!-- Row 7 -->
+<tr>
+<td class="cream"></td>
+<td class="cream"></td>
+<td class="cream"></td>
+<td class="cream"></td>
+<td class="cream"></td>
+<td class="cream"></td>
+<td class="cream"></td>
+<td class="cream"></td>
+<td class="cream"></td>
+<td class="cream"></td>
+</tr>
+
+<!-- Row 8 -->
+<tr>
+<td class="bluegrid"></td>
+<td class="bluegrid"></td>
+<td class="bluegrid"></td>
+<td class="bluegrid"></td>
+<td class="bluegrid"></td>
+<td class="black-yellow"></td>
+<td class="black-yellow"></td>
+<td class="black-yellow"></td>
+<td class="black-yellow"></td>
+<td class="black-yellow"></td>
+</tr>
+
+<!-- Row 9 -->
+<tr>
+<td class="black-yellow"></td>
+<td class="black-yellow"></td>
+<td class="black-yellow"></td>
+<td class="black-yellow"></td>
+<td class="black-yellow"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+</tr>
+
+<!-- Row 10 -->
+<tr>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+</tr>
+
+</table>
+
+</body>
+</html>

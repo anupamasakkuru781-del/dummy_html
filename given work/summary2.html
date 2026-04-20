@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Colorful Multiplication Table</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background: #f4f4f4;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+
+        th, td {
+            width: 50px;
+            height: 45px;
+            text-align: center;
+            font-weight: bold;
+            border: 1px solid #555;
+        }
+
+        /* Top header */
+        th {
+            background: #c8e6c9;
+        }
+
+        /* Left header */
+        .row-head {
+            background: #ffe0b2;
+        }
+
+        /* Diagonal highlight */
+        .diagonal {
+            border: 3px solid black;
+            background: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+<h2>🌈 Colorful Multiplication Table (1–13)</h2>
+
+<table id="table"></table>
+
+<script>
+    let size = 13;
+    let table = document.getElementById("table");
+
+    // Header row
+    let header = "<tr><th>X</th>";
+    for (let i = 1; i <= size; i++) {
+        header += "<th>" + i + "</th>";
+    }
+    header += "</tr>";
+    table.innerHTML += header;
+
+    // Colors for columns
+    let colors = [
+        "#f8bbd0","#ef9a9a","#ffe082","#ffcc80",
+        "#fff59d","#c5e1a5","#81c784","#4db6ac",
+        "#81d4fa","#90caf9","#b39ddb","#ce93d8",
+        "#f48fb1"
+    ];
+
+    // Rows
+    for (let i = 1; i <= size; i++) {
+        let row = "<tr>";
+        row += "<th class='row-head'>" + i + "</th>";
+
+        for (let j = 1; j <= size; j++) {
+            let value = i * j;
+
+            if (i === j) {
+                row += "<td class='diagonal'>" + value + "</td>";
+            } else {
+                row += "<td style='background:" + colors[j-1] + "'>" + value + "</td>";
+            }
+        }
+
+        row += "</tr>";
+        table.innerHTML += row;
+    }
+</script>
+
+</body>
+</html>

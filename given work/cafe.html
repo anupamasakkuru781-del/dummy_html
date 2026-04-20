@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cafe Klang</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+}
+
+/* HERO SECTION */
+.hero{
+    background:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836') no-repeat center/cover;
+    height:100vh;
+    color:white;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.hero h1{
+    font-size:50px;
+}
+
+.hero button{
+    padding:10px 20px;
+    margin:10px;
+    border:none;
+    background:#ff9800;
+    color:white;
+    cursor:pointer;
+}
+
+/* ABOUT */
+.about{
+    background:#6b4a2f;
+    color:white;
+    padding:50px;
+    display:flex;
+    gap:20px;
+}
+
+.about img{
+    width:300px;
+    border-radius:10px;
+}
+
+/* TEAM */
+.team{
+    background:#c08a4d;
+    padding:50px;
+    text-align:center;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    width:150px;
+}
+
+/* MENU */
+.menu{
+    background:url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085') no-repeat center/cover;
+    padding:50px;
+    color:white;
+    display:flex;
+    justify-content:space-around;
+}
+
+/* TESTIMONIALS */
+.testimonials{
+    background:#6b4a2f;
+    color:white;
+    padding:50px;
+    text-align:center;
+}
+
+.test-box{
+    background:#c08a4d;
+    padding:20px;
+    margin:10px auto;
+    width:300px;
+    border-radius:10px;
+}
+
+/* CONTACT */
+.contact{
+    background:url('https://images.unsplash.com/photo-1556740749-887f6717d7e4') no-repeat center/cover;
+    padding:50px;
+    color:white;
+    text-align:center;
+}
+
+input, textarea{
+    width:80%;
+    padding:10px;
+    margin:10px;
+}
+
+button{
+    padding:10px 20px;
+    background:#ff9800;
+    border:none;
+    color:white;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>Cafe Klang</h1>
+    <p>Your favourite coffee daily lives</p>
+    <div>
+        <button>Our Menu</button>
+        <button>Book Now</button>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<div class="about">
+    <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9">
+    <div>
+        <h2>Cafe KL</h2>
+        <p>We started in 2009. Best cafe in Klang. Friendly environment and delicious coffee.</p>
+        <button>Read More</button>
+    </div>
+</div>
+
+<!-- TEAM -->
+<div class="team">
+    <h2>Meet People</h2>
+    <div class="cards">
+        <div class="card">Steve</div>
+        <div class="card">Sandra</div>
+        <div class="card">Jackson</div>
+        <div class="card">Michelle</div>
+    </div>
+</div>
+
+<!-- MENU -->
+<div class="menu">
+    <div>
+        <h3>Breakfast</h3>
+        <p>Pancakes - $12</p>
+        <p>Waffle - $10</p>
+    </div>
+    <div>
+        <h3>Coffee</h3>
+        <p>Latte - $8</p>
+        <p>Chocolate - $9</p>
+    </div>
+</div>
+
+<!-- TESTIMONIAL -->
+<div class="testimonials">
+    <h2>Testimonials</h2>
+    <div class="test-box">"Great coffee!" - Sandra</div>
+    <div class="test-box">"Loved the vibe!" - Don</div>
+</div>
+
+<!-- CONTACT -->
+<div class="contact">
+    <h2>Contact</h2>
+    <input type="text" placeholder="Name"><br>
+    <input type="email" placeholder="Email"><br>
+    <textarea placeholder="Message"></textarea><br>
+    <button>Send Message</button>
+</div>
+
+</body>
+</html>
