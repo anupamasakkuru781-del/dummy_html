@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: grid;
+     grid-template-columns: 1fr auto; 
+    align-items: center;
+    background-color: #e6d3dc;
+    padding: 25px 50px;
+}
+
+.logo {
+    color: black;
+    font-size: 20px;
+}
+
+.menu-toggle{
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.links ul {
+    display: flex;
+    grid-auto-flow: column;
+    gap: 20px;
+    list-style: none;
+}
+
+.links ul li {
+    margin-left: 25px;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.hero{
+    background-color:red;
+    color: black;
+    text-align: center;
+    padding: 200px 50px;
+}
+
+.hero h1{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.hero p{
+    margin-bottom: 20px;
+}
+
+.hero button{
+    padding: 10px 20px;
+    border: none;
+    background-color: yellowgreen;
+    cursor: pointer;
+}
+
+.about {
+    background-color: burlywood;
+    text-align: center;
+    padding: 200px 30px;
+}
+
+.about h2 {
+    margin-bottom: 10px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 25px;
+    padding: 70px;
+    background-color: cadetblue;
+
+}
+
+.box {
+    height: 200px;
+    background-color:antiquewhite;
+    display: grid;
+    place-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contact {
+    text-align: center;
+    padding: 30px;
+}
+
+.contact form{
+    display: grid;
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.contact input,
+.contact textarea{
+    padding: 10px;
+}
+
+.contact button{
+    padding: 10px;
+    background-color:darkgray;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+footer{
+    background-color: black;
+    color: cornflowerblue;
+    text-align: center;
+    padding: 20px;
+}
+
+ /* 📱 mobile  */
+@media ( max-width :768px) {
+.links ul{
+    display: none;
+}
+
+.menu-toggle{
+    display: grid;
+    
+}
+
+.services{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+}  

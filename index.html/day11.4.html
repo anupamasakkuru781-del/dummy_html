@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodies Restaurant</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="day11.4.css">
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+    <a class="navbar-brand text-warning fw-bold" href="#">Foodies</a>
+
+    <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a  class="nav-link active" href="./day11.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="./day11.2.html">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="./day11.3.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="./day11.4.html">Contact</a></li>
+        </ul>
+        <button class="btn btn-warning ms-3" onclick="window.location.href='day11.5.html'">Book a Table</button>
+    </div>
+</nav>
+
+<section class="hero d-flex align-items-center">
+    <div class="container">
+        <div class="row align-items-center">
+            
+            <div class="col-md-6 text-white">
+                <h1 class="fw-bold">Get in Touch</h1>
+                <p>Interactive menu, book table reservations,
+                    spotlight signature food items 
+                    and more!
+                </p>
+                
+            </div>
+
+            <div class="col-md-6 text-center">
+                
+                     
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container hero-content text-center">
+        <h1>Get in Touch</h1>
+        <p>Book your table easily and enjoy delicious meals</p>
+
+        <!-- Booking Form -->
+        <div class="booking-box">
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <input type="date" class="form-control" required>
+                </div>
+
+                <div class="col-md-6">
+                    <select class="form-control">
+                        <option>Select Time</option>
+                        <option>10:00 AM</option>
+                        <option>1:00 PM</option>
+                        <option>4:00 PM</option>
+                        <option>8:00 PM</option>
+                    </select>
+                </div>
+
+                <div class="col-12">
+                    <input type="text" class="form-control" placeholder="Your Name" required>
+                </div>
+
+                <div class="col-12 text-center">
+                    <button class="btn-book">Book a Table →</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="phone">
+            📞 +1 234 567 8900
+        </div>
+    </div>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

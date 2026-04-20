@@ -1,0 +1,85 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* NAVBAR */
+.navbar{
+    background:#000;
+}
+.logo{
+    color:#ff7a00 !important;
+    font-weight:bold;
+}
+
+/* HERO */
+.hero{
+    height:90vh;
+    background:url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0') center/cover;
+    display:flex;
+    align-items:center;
+}
+.hero-text{
+    color:black;
+}
+.small-title{
+    color:#ff7a00;
+    letter-spacing:2px;
+}
+
+/* MENU */
+.menu-card{
+    border:1px solid #eee;
+    border-radius:10px;
+    overflow:hidden;
+    transition:0.3s;
+}
+.menu-card:hover{
+    transform:translateY(-8px);
+}
+
+/* ABOUT */
+.about{
+    background:#f8f8f8;
+}
+
+/* STORY */
+.story img{
+    border-radius:10px;
+    align-content: center;
+}
+
+/* FEATURES */
+.feature-card{
+    padding:40px;
+    border:1px solid #eee;
+    border-radius:10px;
+}
+
+/* BOOKING */
+.booking{
+    background:url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0') center/cover;
+    padding:80px 0;
+}
+.form-box{
+    background:#fff;
+    padding:20px;
+    border-radius:10px;
+    width:300px;
+}
+
+/* BUTTON */
+.btn-main{
+    background:#ff7a00;
+    color:#fff;
+}
+.btn-main:hover{
+    background:#e66a00;
+}
+
+/* FOOTER */
+.footer{
+    background:#000;
+}
+
+
+
