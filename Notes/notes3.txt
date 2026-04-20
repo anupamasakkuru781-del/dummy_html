@@ -1,0 +1,1196 @@
+day 1
+
+<!-- its a document type of html -->
+<!DOCTYPE html>
+
+<!-- html tage which is using a language attribute = where value is english -->
+
+<!-- what is attribute its a aditional information of a tag -->
+<html lang="en">
+
+<!-- head tage of html contains meta data, title and link , style , etc -->
+
+<head>
+    <!-- meta ? attribute = charset = type of character set -->
+    <meta charset="UTF-8">
+
+    <!-- live server  => use any browser(google , chrome,brave,edge,firefox) = search engine google= V8   -->
+    <!-- v8 is a javascript engine -->
+    <!-- meta viewport , device-width = width of the device , initial-scale=1.0 = initial scale   what is i use initial-scale=5.0 ? i dont know   -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Day 1</title>
+
+    <!-- <link rel="stylesheet" href=""> ? -->
+     <!-- <script></script> -->
+
+     <!-- <style></style> -->
+</head>
+
+<body>
+    <!-- heading tags -->
+    <h1>hii this is a heading </h1>
+    <h2>hii this is a heading </h2>
+    <h3>hii this is a heading</h3>
+    <h4>hii this is a heading</h4>
+    <h5>hii this is a heading</h5>
+    <h6>hii this is a heading</h6>
+
+    <!-- paragraph tag 
+    pre defined css values 
+    p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+} 
+    -->
+
+    <p>Lorem ipsum,                   dolor sit amet consectetur adipisicing elit.
+        Ducimus tempore repellat maxime molestiae obcaecati alias dolor dolorum,
+        sunt fugit dolores, odit non iure sapiente vitae dolorem.
+        Aperiam nisi accusamus veniam.</p>
+
+        <!-- pre tag
+          defalt css values
+          pre {
+    display: block;
+    font-family: monospace;
+    unicode-bidi: isolate;
+    white-space: pre;
+    margin-block: 1em 1em;
+    margin-inline: 0px;
+}
+        -->
+         <hr>
+
+         <!-- b tag  -->
+          <!-- strong tag -->
+
+        <pre><b>Lorem ipsum,dolor sit amet consectetur adipisicing elit.</b>
+            <strong>Ducimus tempore repellat maxime molestiae obcaecati alias dolor dolorum,</strong>
+            <i>sunt fugit dolores </i>  <em>, odit non iure sapiente vitae dolorem.</em>
+         <mark> Aperiam nisi accusamus veniam.</mark>
+
+         <del>Lorem ipsum</del>
+         <small>Puneeth s</small>
+         <ins>MERN Stack , Java full stack</ins>
+
+         100 <sub>C</sub> 
+
+         puneeth <sup>s</sup>
+
+        </pre>
+
+
+
+        <!-- br tag -->
+         <hr>
+
+
+</body>
+
+</html>
+
+
+day 2.1
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2</title>
+</head>
+
+<body>
+
+
+    <h1> Puneeth s</h1>
+
+    <!-- skils -->
+
+
+    <!-- ul tag = unordered list 
+    attribute = style = list-style-type 
+    types list
+    disc , circle , square, none  
+    
+    -->
+
+
+    <!-- ol tag = ordered list   
+     attribute = style = list-style-type
+     types list
+     1 ,       a ,            i ,         A ,           I         none
+    decimal, lower-alpha, lower-roman, upper-alpha, upper-roman 
+     -->
+
+    <ul style="list-style-type: disc;">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ul>
+
+
+     <ul style="list-style-type: circle;">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ul>
+
+
+     <ul style="list-style-type: square;">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ul>
+
+     <ul style="list-style-type: none;">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ul>
+
+    <!-- projects in ol -->
+    <ol style="  list-style-type: circle;">
+        <li>Project 1</li>
+        <li>Project 2</li>
+        <li>Project 3</li>
+        
+    </ol>
+
+       <ol style="  list-style-type: lower-roman;">
+        <li>Project 1</li>
+        <li>Project 2</li>
+        <li>Project 3</li>
+        
+    </ol>
+
+       <ol style="  list-style-type: lower-alpha;">
+        <li>Project 1</li>
+        <li>Project 2</li>
+        <li>Project 3</li>
+        
+    </ol>
+       <ol style="  list-style-type: upper-roman;">
+        <li>Project 1</li>
+        <li>Project 2</li>
+        <li>Project 3</li>
+        
+    </ol> 
+
+        <!-- img tag is used to add image
+        attribute
+         src = source
+         alt = alternative 
+       
+
+        <img src="./img/imae.png" alt="imgofpuneeth">
+
+        <video  controls autoplay muted >
+            <source src="./video/videoplayback.mp4" type="video/mp4">
+        </video>
+     
+        <audio src="./mp3/Thuru Thuru .mp3" controls autoplay muted >
+
+        </audio>
+
+        <ul>
+            <li>Project 4</li>
+        <li>Project 5</li>
+        <li>Project 6</li>
+        </ul> -->
+   
+     <ol start="4">
+        <li>Project 4</li>
+        <li>Project 5</li>
+        <li>Project 6</li>
+    </ol>
+
+
+    
+
+
+
+
+
+</body>
+
+</html>
+
+day 2.2
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day2.2</title>
+
+    <!-- <style>
+        table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style> -->
+</head>
+<body>
+    <!-- table tag = used to create table
+    childeren of table tag = tr , th , td
+    
+    tr = table row
+    th = table header
+    td = table data
+
+
+    attribute of table tag = border , cellspacing , cellpadding
+
+
+    ? cellspacing, cellpadding can be used to add space between cells 
+    and can only be used with table tag we cannot use it with tr tag , th tag , td tag
+
+    attribute of th , td tag = rowspan , colspan 
+    but we cant use it with table tag and tr tag it can be used with th tag and td tag
+    -->
+
+
+
+    <table  border="2" cellspacing="5"   cellpadding="5">
+        <caption>Employee</caption>
+        <tr   >
+            <!-- inline css = if we want to apply css on single element -->
+            <th style="background-color: aqua;" >Name</th>
+            <th style="background-color: rgb(255, 0, 0);">slary</th>
+            <th style="background-color: rgb(0, 255, 0);">Gender</th>
+        </tr>
+        <tr>
+            <td rowspan="2">John</td>
+            <td>25k</td>
+            <td>Male</td>
+        </tr>
+        <tr >
+            <td>20k</td>
+            <td>Female</td>
+        </tr>
+        <tr>
+            <td>Emily</td>
+            <td>30k</td>
+            <td>Female</td>
+        </tr>
+
+    </table>
+
+
+    <hr>
+    <hr>
+    <hr>
+
+          <iframe src="./Day1.html" frameborder="0" style="height: 100vh; width: 90%;"></iframe>
+          <!-- <iframe src="./Day2.2.html" frameborder="0"></iframe> -->
+
+
+            <a href="https://www.amazon.in/?tag=msndeskabkin-21&ref=pd_sl_3nvnap9gn3_e&adgrpid=1319415610409622&hvadid=82463739609610&hvnetw=o&hvqmt=e&hvbmt=be&hvdev=c&hvlocint=&hvlocphy=116074&hvtargid=kwd-82464407407007:loc-90&hydadcr=5622_2377266&mcid=e38656c3f41e34238d375bdea9d144ba"> hiii this a link</a>
+
+</body>
+</html>
+
+day 3
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register form</title>
+
+    <link rel="icon" href="./img/image.png">
+    <link rel="stylesheet" href="./style.css">
+
+<!-- internal css -->
+    <!-- <style>
+      form{
+        height: 100vh;
+        width: 50%;
+        background-color: rgb(255, 0, 0);
+        border: 2px solid white;
+      }
+    </style> -->
+</head>
+
+<body>
+
+    <h1>Register form</h1>
+
+
+    <!-- opacity: 0; border-radius: 50%;  border: 2px solid white;          background-color: rgb(255, 0, 0); 
+ -->
+    <!-- inline css -->
+   
+
+    <!-- form tag is used to create form and send data to server (crud)
+     attribute of form tag = action , method
+     
+     action = where we want to send data
+     method = how we want to send data
+
+
+     choildren of form tag = input , label , select , textarea , button   
+
+
+     input tag = used to create input field
+     attribute of input tag = type , placeholder , required , min , max , minlength , maxlength
+
+     type = text , email , password , date , radio , checkbox , submit, reset
+    
+     placeholder = add placeholder to input field
+     required = make input field required
+     min , max = add min and max value to input field
+     minlength , maxlength = add min and max length to input field
+
+     label tag = used to create label
+     attribute of label tag = for
+
+     for = add id to input field
+
+     select tag = used to create select field
+     attribute of select tag = name , id
+
+     option tag = used to create option
+     attribute of option tag = value
+
+     textarea tag = used to create textarea
+     attribute of textarea tag = name , id
+
+     button tag = used to create button
+     attribute of button tag = type
+    -->
+
+
+
+    <form action=""  method="post"
+    >
+     <div>
+         <label for="">NAME</label>
+      <input type="text"  placeholder="NAME" required >
+
+      <br>
+      <label for=""> Email</label>
+      <input type="email">
+
+      <br>
+
+      <label for="">PASSWORD</label>
+      <input type="password">
+      <br>
+
+      <label for=""> Date</label>
+      <input type="date">
+
+      <br>
+
+      <label for="">Gender</label>
+      <label for="">boy</label>
+      <input type="radio">
+      <label for="">girl</label>
+      <input type="radio">
+      <label for="">others</label>
+      <input type="radio">
+
+      <br>
+
+      <select name="" id="">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+
+
+      <textarea name="" id="" maxlength="">
+
+      </textarea>
+
+      <br>
+
+      <!-- <input type="submit">     -->
+
+      <input type="reset">
+      
+      <button type="submit">register</button>
+     </div>
+    </form>
+
+
+     <!-- <div style=" 
+    height: 100vh; width: 100vw;
+     background-color: aqua;
+      ">
+
+      <label for="">NAME</label>
+      <input type="text">
+
+      <br>
+      <label for=""> Email</label>
+      <input type="text">
+
+      <label for="">PASSWORD</label>
+      <input type="password">
+
+      <input type="submit">    
+      
+      <button type="submit">register</button>
+    </div> -->
+
+     <!-- <div style="height: 50%; 
+        width: 50%;
+         background-color: rgb(255, 0, 0); 
+         border: 2px solid white;
+         border-radius: 50%;
+         ">
+
+        </div> -->
+</body>
+
+</html>
+
+Day 4
+
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIVINE TEMPLES</title>
+    <link rel="icon" href="./img/logo.png">
+
+    <!-- link to css -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- internal css -->
+    <style>
+        .navbar {
+            width: 100%;
+            height: 80px;
+            background-color: rgb(253, 240, 240);
+            display: flex;
+            border-bottom: 1px solid rgb(238, 227, 227);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- start main -->
+    <div class="main" style="width: 100%;height: auto;">
+
+
+        <!-- start navbar -->
+        <div class="navbar">
+
+            <div class="navLogo">
+
+                <img src="./img/logo.png" alt="" style="width: 60px; height: 60;">
+
+            </div>
+            <div class="navList">
+
+                <a href="">HOME</a>
+                <a href="">ABOUT</a>
+                <a href="">HISTORY</a>
+                <a href="">ARCHITECTURE</a>
+                <a href="">GALLERY</a>
+                <a href="">VISIT</a>
+                <a href="">CONTACT</a>
+
+            </div>
+            <div class="navBtn">
+                <button>PLAN A VISIT</button>
+            </div>
+
+
+        </div>
+        <!--end navbar  -->
+
+
+        <!-- start first section -->
+
+
+        <div class="section1">
+
+
+            <div class="S1-Box1">
+                <h1>
+                    A Timeless Symbol of <br>
+                    <i  style="color: orange; background: none;"> Faith & Architecture
+                    </i>
+                </h1>
+
+                <p> Discover the divine beauty, rich history, and spiritual
+                    significance of one of India's most magnificent temples.</p>
+
+                <div>
+                    <button id="btn1">Explore Temple</button>
+                    <button id="btn2"> ▶️ watch video</button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- end first section -->
+
+
+
+
+    </div>
+
+    <!-- end main -->
+
+</body>
+
+</html>
+
+
+
+CSS
+/* external css */
+
+/*  * = universal selector  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+
+
+.navLogo {
+    height: 100%;
+    width: 20%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.navList {
+    height: 100%;
+    width: 60%;
+    /* background-color: rgb(255, 0, 0); */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navBtn {
+    height: 100%;
+    width: 20%;
+    /* background-color: rgb(0, 255, 0); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navList>a {
+    background: none;
+    text-decoration: none;
+}
+
+
+.navBtn>button{
+    background-color: orange;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: blue;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+/* end of navbar */
+
+
+/* section1 */
+
+.section1{
+    width: 100%;
+    height: 50Vh;
+    background-color: aqua;
+    background-image: url(./img/bgimg.png);
+    background-repeat: no-repeat;
+    /* background-size: auto; */
+    background-size: 100% 100%;
+
+}
+
+.S1-Box1{
+    background: none;
+    width: 60%;
+    height: 100%;
+    /* background-color: cadetblue; */
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 30px;
+
+    padding: 100px 100px;
+}
+
+/* , = group selector */
+.S1-Box1 h1,p,button{
+    background: none;
+    color: black;
+
+    
+}
+.S1-Box1>div{
+    background: none;
+}
+
+.S1-Box1>div>#btn1{
+      background-color: orange;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: blue;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0px 20px;
+
+}
+
+.S1-Box1>div>#btn2{
+    background: none;
+    border: 1px solid  black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: blue;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+
+day 5 
+
+HTML 
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- start main -->
+    <main>
+        <!-- start navbar -->
+        <nav>
+
+            <div class="nav-logo">
+
+            </div>
+            <div class="nav-list">
+
+            </div>
+
+
+        </nav>
+        <!-- end navbar -->
+
+
+        <!-- slider start -->
+        <section class="slider">
+
+
+
+
+            <h4 style=" font-weight: lighter; font-size: xx-large;"> Welcome to Moso Interior</h4>
+           
+            <h3 style="font-size: 30px;">Decorate a beautiful interior
+                for your space</h3>
+            <div class="slider-box">
+
+            </div>
+
+        </section>
+
+
+        <!-- slider end -->
+
+
+        <!-- ourStory start -->
+        <section class="ourStory">
+
+            <div class="ourStory-box1">
+
+            </div>
+            <div class="ourStory-box2">
+
+            </div>
+
+        </section>
+
+
+        <!-- ourStory end -->
+
+        <!-- openingHours start -->
+
+        <section class="openingHours">
+             <div class="openingHours-box1">
+
+            </div>
+            <div class="openingHours-box2">
+
+            </div>
+
+        </section>
+        <!-- openingHours end -->
+
+
+        <!-- moso Design start -->
+
+        <section class="mosoDesign">
+
+        </section>
+        <!-- moso Design end -->
+
+        <!-- start review -->
+
+        <section class="review">
+
+        </section>
+        <!-- end review -->
+
+        <!-- stayhello start -->
+
+        <section class="stayhello">
+
+        </section>
+        <!-- stayhello end -->
+
+        <!-- start footer -->
+        <footer>
+
+        </footer>
+        <!-- end footer -->
+
+
+    </main>
+    <!-- end main -->
+
+</body>
+
+</html>
+
+
+CSS
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+main {
+    height: auto;
+    width: 100%;
+    background-color: rgb(240, 18, 18);
+}
+
+nav{
+    height: 70px;
+    width: 100%;
+    background-color: #b5afaf;
+    display: flex;
+}
+
+.nav-logo{
+    height: 100%;
+    width: 40%;
+    background-color: #070707;
+}
+.nav-list{
+    height: 100%;
+    width: 60%;
+    background-color: rgb(4, 212, 21);
+}
+
+
+.slider {
+    height: 100vh;
+    width: 100%;
+    background-color: #a27f7f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.slider-box{
+    height: 100px;
+    width: 700px;
+    background-color: #f2ecec;
+}
+
+.ourStory {
+    height: 50vh;
+    width: 100%;
+    background-color: #58a368;
+    display: flex;
+}
+
+.ourStory-box1{
+ height: 100%;
+    width: 50%;
+    background-color: #0b0b0b;
+}
+
+.ourStory-box2{
+    height: 100%;
+    width: 50%;
+    background-color: #f2ecec;
+}
+
+
+.openingHours {
+    height: 40vh;
+    width: 100%;
+    background-color: #c62929;
+    display: flex;
+}
+.openingHours-box1{
+    height: 100%;
+    width: 50%;
+    background-color: #f2ecec;
+}
+.openingHours-box2{
+ height: 100%;
+    width: 50%;
+    background-color: #0b0b0b;
+}
+
+
+
+.mosoDesign{
+    height: 100vh;
+    width: 100%;
+    background-color: #708c1b;
+}
+
+.review{
+    height: 80vh;
+    width: 100%;
+    background-color: #0810de;
+}
+
+.stayhello{
+    height: 100vh;
+    width: 100%;
+    background-color: #c5d60c;
+}
+
+footer{
+    height: 70vh;
+    width: 100%;
+    background-color: #070707;
+} 
+
+day6
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Playwrite+IE:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<style>
+  body {
+  font-family: "Bitcount Grid Double", system-ui;
+}
+</style>
+
+<body>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Iusto asperiores, consequatur, tempora illo numquam placeat
+        quam saepe possimus illum debitis modi nesciunt optio error
+        officia eius non at nam laboriosam.</p>
+
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Iusto asperiores, consequatur, tempora illo numquam placeat
+        quam saepe possimus illum debitis modi nesciunt optio error
+        officia eius non at nam laboriosam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Iusto asperiores, consequatur, tempora illo numquam placeat
+        quam saepe possimus illum debitis modi nesciunt optio error
+        officia eius non at nam laboriosam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Iusto asperiores, consequatur, tempora illo numquam placeat
+        quam saepe possimus illum debitis modi nesciunt optio error
+        officia eius non at nam laboriosam.</p>
+</body>
+
+</html>
+
+
+
+day 6 html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Playwrite+IE:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<style>
+  body {
+  font-family: "Bitcount Grid Double", system-ui;
+}
+</style>
+
+<body>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Iusto asperiores, consequatur, tempora illo numquam placeat
+        quam saepe possimus illum debitis modi nesciunt optio error
+        officia eius non at nam laboriosam.</p>
+
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Iusto asperiores, consequatur, tempora illo numquam placeat
+        quam saepe possimus illum debitis modi nesciunt optio error
+        officia eius non at nam laboriosam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Iusto asperiores, consequatur, tempora illo numquam placeat
+        quam saepe possimus illum debitis modi nesciunt optio error
+        officia eius non at nam laboriosam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Iusto asperiores, consequatur, tempora illo numquam placeat
+        quam saepe possimus illum debitis modi nesciunt optio error
+        officia eius non at nam laboriosam.</p>
+</body>
+
+</html>
+
+
+
+day 7 
+html 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link rel="stylesheet" href="./grid.css">
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="logo"></div>
+        <div class="list"></div>
+        <div class="btn"></div>
+
+    </nav>
+
+
+    <section class=" part1">
+
+        <div class="box1">A</div>
+        <div class="box2">B</div>
+
+        <article>
+            <div class="box3">C</div>
+            <div class="box4">D</div>
+            <div class="box5">E</div>
+        </article>
+
+        <!-- <div class="box6">Fxfxbsdgngf</div> -->
+
+
+
+    </section>
+</body>
+
+</html>
+
+
+
+style.css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    height: 90px;
+    width: 100%;
+    background: gray;
+    display: flex;
+}
+
+.logo {
+    height: 100%;
+    /* width: 25%; */
+    flex: 0.3;
+    background: rgb(47, 94, 55);
+}
+
+.list {
+    height: 100%;
+    /* width: 50%; */
+    flex: 1;
+
+    background: rgb(76, 12, 223);
+}
+
+.btn {
+    height: 100%;
+    /* width: 25%; */
+    flex: 0.4;
+
+    background: rgb(210, 21, 21);
+
+}
+
+
+grid.css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    height: 90px;
+    width: 100%;
+    background: gray;
+    display: grid;
+    grid-template-columns: 20% 50% 1fr;
+}
+
+.logo {
+    height: 100%;
+    /* width: 25%; */
+    background: rgb(47, 94, 55);
+}
+
+.list {
+    height: 100%;
+    /* width: 50%; */
+
+    background: rgb(76, 12, 223);
+}
+
+.btn {
+    height: 100%;
+    /* width: 25%; */
+
+    background: rgb(210, 21, 21);
+
+}
+
+
+.part1 {
+    background: rgb(8, 194, 241);
+    display: grid;
+    grid-template-columns: 100px 100px ;
+    grid-template-rows: 200px 200px 200px;
+    gap: 10px;
+   
+}
+
+article{
+    background: white;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    gap: 10px;
+}
+
+
+
+/* 
+.box1 {
+    background-color: aqua;
+    height: 150px;
+    width: 400px;
+} */
+
+
+
+/* .box2 {
+    background-color: rgb(10, 255, 15);
+    grid-area: box2;
+    height: 150px;
+    width: 400px;
+} */
+
+/* .box3 {
+    grid-area: box3;
+    height: 150px;
+    width: 400px;
+    background-color: rgb(255, 0, 0);
+} */
+/* 
+.box4 {
+    grid-area: box4;
+    height: 150px;
+    width: 400px;
+    background-color: rgb(255, 255, 0);
+} */
+
+/* .box5 {
+    grid-area: box5;
+    height: 150px;
+    width: 400px;
+    background-color: rgb(0, 255, 255);
+} */
+
+/* .box6 {
+    grid-area: box6;
+    height: 150px;
+    width: 400px;
+    background-color: rgb(0, 0, 255);
+} */
